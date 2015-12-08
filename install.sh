@@ -29,7 +29,7 @@ echo "
 Do some house keeping...
 ----------------------------------------
 "
-php -r "rename('readme.template.md, 'readme.md');"
+php -r "rename('readme.template.md', 'readme.md');"
 rm -f readme.md
 rm -rf .git
 rm -f install.sh
