@@ -9,7 +9,7 @@ echo "
 Installing Laravel...
 ----------------------------------------
 "
-git clone https://github.com/laravel/laravel.git .
+git clone https://github.com/achiive/laravel-strapper.git .
 
 echo "
 Install composer packages...
@@ -29,8 +29,8 @@ echo "
 Do some house keeping...
 ----------------------------------------
 "
-php -r "rename('readme.template.md', 'readme.md');"
 rm -f readme.md
+php -r "rename('readme.template.md', 'readme.md');"
 rm -rf .git
 rm -f install.sh
 
