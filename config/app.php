@@ -150,6 +150,7 @@ return [
          */
         Conner\Tagging\Providers\TaggingServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
+        Barryvdh\Cors\ServiceProvider::class,
 
     ],
 
