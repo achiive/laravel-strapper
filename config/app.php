@@ -146,11 +146,17 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         /**
-         * Added...
+         * Laravel Strapper...
          */
         Conner\Tagging\Providers\TaggingServiceProvider::class,
+        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+        Dingo\Api\Provider\LaravelServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Barryvdh\Cors\ServiceProvider::class,
+
+        /**
+         * App Specific...
+         */
 
     ],
 
@@ -202,8 +208,9 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
 
         /**
-         * Added...
+         * Laravel Strapper...
          */
+        'JWTAuth'  => Tymon\JWTAuth\Facades\JWTAuth::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
     ],
