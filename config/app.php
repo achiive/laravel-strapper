@@ -148,7 +148,6 @@ return [
         /**
          * Laravel Strapper...
          */
-        Conner\Tagging\Providers\TaggingServiceProvider::class,
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
         Dingo\Api\Provider\LaravelServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
