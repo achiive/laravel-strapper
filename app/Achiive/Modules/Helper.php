@@ -1,6 +1,8 @@
 <?php
 namespace App\Achiive\Modules;
 
+use Dingo\Api\Routing\Router;
+
 class Helper
 {
 
@@ -11,7 +13,7 @@ class Helper
      * @param   array                      $routes     Array of paths with controller assigned
      * @param   string                     $prePrefix  Path prefix for the route
      */
-    static public function apiRouteLoop(\Dingo\Api\Routing\Router $api, array $routes, $prePrefix = '')
+    static public function apiRouteLoop(Router $api, array $routes, $prePrefix = '')
     {
         foreach ($routes as $prefix => $controller) {
 
