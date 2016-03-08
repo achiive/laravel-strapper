@@ -210,7 +210,7 @@ return [
          * Laravel Strapper...
          */
         'JWTAuth'  => Tymon\JWTAuth\Facades\JWTAuth::class,
-        'Helper'   => App\Achiive\Supports\Helper::class,
+        'Helper'   => App\Achiive\Modules\Helper::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
     ],
