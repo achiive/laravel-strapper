@@ -11,6 +11,33 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+$api = app('Dingo\Api\Routing\Router');
+$api->version('v1', ['namespace' => 'App\Http\Controllers', 'middleware' => 'cors'], function ($api) {
+
+    // Advance Routes...
+    // =========================================================================
+
+    // ...
+
+
+    // Helpers...
+    // =========================================================================
+
+    // Single point
+    // -------------------------------------------------------------------------
+    $api->get('{model}_{id}', function ($model, $id) {
+        return redirect('api/' . str_plural($model) . '/' . $id);
+    })->name('helper.single_point');
+
+
+    // Basic Routes...
+    // =========================================================================
+
+    Helper::apiRouteLoop($api, [
+        'url' => 'TheController',
+        'prefix' => [
+            'sub-route' => 'AnotherController'
+        ],
+    ]);
+
 });
