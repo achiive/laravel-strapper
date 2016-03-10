@@ -148,6 +148,7 @@ return [
         /**
          * Laravel Strapper...
          */
+        Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
         Dingo\Api\Provider\LaravelServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
